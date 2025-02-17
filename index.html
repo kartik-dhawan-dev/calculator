@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+</head>
+
+<body>
+    <main class="h-screen bg-[#2E3440] font-mono flex items-center justify-center">
+        <!-- Calculator Container Start -->
+        <div class=" relative flex flex-col gap-12 bg-[#3B4252] p-8  
+         border-4 border-[#4C566A] shadow-[12px_12px_0px_0px_rgba(76,86,106,0.25)]">
+
+            <!-- Calculator Indicator Starts -->
+            <div class="absolute -top-3 -left-3 text-lg text-[#B8BB26] font-bold
+            bg-[#3B4252] px-2 py-1 border-4 border-[#4C566A] ">
+                CALCULATOR
+            </div>
+            <!-- Calculator Indicator Ends -->
+
+            <!-- Calculator Input/Display Section Starts -->
+            <div class="flex flex-col gap-2 justify-end text-right">
+                <!-- Expression Starts -->
+                <div class="text-sm text-[#83A598] opacity-75">[expression]</div>
+                <!-- Expression Ends -->
+                <!-- Result Starts -->
+                <div class="text-3xl text-[#EBDBB2] font-bold overflow-hidden
+                            p-4 bg-[#2E3440] border-4 border-[#4C566A]  
+                            shadow-[inset_0px_0px_12px_rgba(76,86,106,0.3)]">
+                    [display]
+                </div>
+                <!-- Result Ends -->
+            </div>
+            <!-- Calculator Input/Display Section Ends -->
+
+            <!-- Calculator Button Section Starts -->
+            <div class="h-full w-full grid grid-cols-4 gap-4">
+
+                <!-- Row 1 Starts -->
+                <button class="operator">Clear</button>
+                <button class="operator">/</button>
+                <button class="operator">*</button>
+                <button class="operator">Del</button>
+                <!-- Row 1 Ends -->
+
+                <!-- Row 2 Starts -->
+                <button class="numeric-buttons">7</button>
+                <button class="numeric-buttons">8</button>
+                <button class="numeric-buttons">9</button>
+                <button class="operator">-</button>
+                <!-- Row 2 Ends -->
+
+                <!-- Row 3 Starts -->
+                <button class="numeric-buttons">4</button>
+                <button class="numeric-buttons">5</button>
+                <button class="numeric-buttons">6</button>
+                <button class="operator">+</button>
+                <!-- Row 3 Ends -->
+
+                <!-- Row 4 Starts -->
+                <button class="numeric-buttons">1</button>
+                <button class="numeric-buttons">2</button>
+                <button class="numeric-buttons">3</button>
+                <button class="operator">=</button>
+                <!-- Row 4 Ends -->
+
+                <!-- Row 5 Starts -->
+                <button class="operator">0</button>
+                <button class="operator">.</button>
+                <!-- Row 5 Ends -->
+
+            </div>
+            <!-- Calculator Button Section Ends -->
+        </div>
+        <!-- Calculator Container Ends -->
+    </main>
+</body>
+
+</html>
