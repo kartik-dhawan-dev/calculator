@@ -24,15 +24,18 @@
             <!-- Calculator Input/Display Section Starts -->
             <div class="flex flex-col gap-2 justify-end text-right">
                 <!-- Expression Starts -->
-                <div class="text-sm text-[#83A598] opacity-75">[expression]</div>
+                <div id="expression-element" class="text-sm text-[#83A598] opacity-75">[expression]</div>
                 <!-- Expression Ends -->
                 <!-- Result Starts -->
-                <div class="text-4xl text-[#EBDBB2] font-bold overflow-hidden
+                <div id="display-element" class="text-4xl text-[#EBDBB2] font-bold overflow-hidden
                             p-4 bg-[#2E3440] border-4 border-[#4C566A]  
                             shadow-[inset_0px_0px_12px_rgba(76,86,106,0.3)]">
                     [display]
                 </div>
                 <!-- Result Ends -->
+                <!-- Error Field Starts -->
+                <div id="error-message-element" class="text-[#FB4934] text-sm h-4 mt-1"></div>
+                <!-- Error Field Ends -->
             </div>
             <!-- Calculator Input/Display Section Ends -->
 
@@ -40,36 +43,36 @@
             <div class="h-full w-full grid grid-cols-4 gap-4">
 
                 <!-- Row 1 Starts -->
-                <button class="operator">Clear</button>
-                <button class="operator">/</button>
-                <button class="operator">*</button>
-                <button class="operator">Del</button>
+                <button class="operator-button">Clear</button>
+                <button class="operator-button">/</button>
+                <button class="operator-button">*</button>
+                <button class="operator-button">Del</button>
                 <!-- Row 1 Ends -->
 
                 <!-- Row 2 Starts -->
-                <button class="numeric-buttons">7</button>
-                <button class="numeric-buttons">8</button>
-                <button class="numeric-buttons">9</button>
-                <button class="operator">-</button>
+                <button class="numeric-button">7</button>
+                <button class="numeric-button">8</button>
+                <button class="numeric-button">9</button>
+                <button class="operator-button">-</button>
                 <!-- Row 2 Ends -->
 
                 <!-- Row 3 Starts -->
-                <button class="numeric-buttons">4</button>
-                <button class="numeric-buttons">5</button>
-                <button class="numeric-buttons">6</button>
-                <button class="operator">+</button>
+                <button class="numeric-button">4</button>
+                <button class="numeric-button">5</button>
+                <button class="numeric-button">6</button>
+                <button class="operator-button">+</button>
                 <!-- Row 3 Ends -->
 
                 <!-- Row 4 Starts -->
-                <button class="numeric-buttons">1</button>
-                <button class="numeric-buttons">2</button>
-                <button class="numeric-buttons">3</button>
-                <button class="operator row-span-2  h-full w-full">=</button>
+                <button class="numeric-button">1</button>
+                <button class="numeric-button">2</button>
+                <button class="numeric-button">3</button>
+                <button class="operator-button row-span-2  h-full w-full">=</button>
                 <!-- Row 4 Ends -->
 
                 <!-- Row 5 Starts -->
-                <button class="operator col-span-2 w-full">0</button>
-                <button class="operator">.</button>
+                <button class="numeric-button col-span-2 w-full">0</button>
+                <button class="operator-button">.</button>
                 <!-- Row 5 Ends -->
 
             </div>
@@ -77,7 +80,7 @@
         </div>
         <!-- Calculator Container Ends -->
     </main>
-    <script src="./script.js"></script>
+    <script type="module" src="./script.js"></script>
 </body>
 
 </html>
