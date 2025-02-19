@@ -3,6 +3,7 @@ const DISPLAY_ELEMENT_ID = "display-element";
 const ERROR_MESSAGE_ELEMENT_ID = "error-message-element";
 const NUMERIC_BUTTON_CLASS = "numeric-button";
 const OPERATOR_BUTTON_CLASS = "operator-button";
+export const MAX_INPUT_LENGTH = 12
 
 const NUMERIC_BUTTON_STYLE_CLASS =
   "w-18 h-18 bg-[#3B4252] text-[#EBDBB2] border-4 border-[#4C566A] shadow-[4px_4px_0px_0px_rgba(76,86,106,0.5)] font-bold text-xl flex items-center justify-center ";
